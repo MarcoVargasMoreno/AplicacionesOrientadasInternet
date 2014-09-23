@@ -1,0 +1,16 @@
+div#box{
+	background: green;
+	width: 300px;
+	height: 300px;
+}
+.slideshow{
+	height: 332px;
+	width: 832px;
+	margin: auto;
+}
+.slideshow img{
+	padding: 15px;
+	border: 1px solid #ccc;
+	background-color: #eee;
+
+}

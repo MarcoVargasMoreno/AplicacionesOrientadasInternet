@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="estilosJquery.css">
+	<title>Document</title>
+	<script src="jquery-2.1.1.js" type="text/javascript"></script>
+	<script src="cycle.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$('#uno').click(function(){
+				$('#box').hide(3000);
+			});
+
+			$('#dos').click(function(){
+				$('#box').show(7000);
+			});
+
+			$('#tres').click(function(){
+				$('#box').slideUp("slow");
+			});
+
+			$('#cuatro').click(function(){
+				$('#box').slideDown("fast");
+			});
+
+			$('#cinco').click(function(){
+				$('#box').fadeOut("down");
+			});
+
+			$('#seis').click(function(){
+				$('#box').fadeIn("down");
+			});
+
+			$('.slideshow').cycle({
+					fx: 'fadeout'
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<div id="box"></div>
+	<a id="uno" href="#">Ocultar Elemento</a> 
+	<br>
+	<a id="dos" href="#">Mostar Elemento</a>
+	<br>
+	<a id="tres" href="#">Oculta de Abajo hacia arriba</a>
+	<br>
+	<a id="cuatro" href="#">Oculta de Arriba hacia Abajo</a>
+	<br>
+	<a id="cinco" href="#">Efecto fadeout</a>
+	<br>
+	<a id="seis" href="#">Efecto fadeIn</a>
+	<br>
+	<br>
+	<div class="slideshow">
+		<img src="rosa.jpg" alt="Rosa" height="200" width="400">
+		
+	</div>
+	
+</body>
+</html>
